@@ -1,0 +1,132 @@
+/*body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}*/
+header {
+    background-color: #22baa0;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+}
+
+header .left-links,
+header .right-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+header .left-links li,
+header .right-links li {
+    margin-right: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #34425a;
+}
+/*
+.form-style {
+    max-width: 600px;
+    margin: 110px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(34, 186, 160, 0.5);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #34425a;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #34425a;
+}
+*/
+body {
+    background-color: #e9ebee;
+    font-family: Arial, sans-serif;
+   }
+   
+   .form-style {
+    width: 250px;
+    height: 350px;
+    margin: 50px auto;
+    padding: 100px ;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+   }
+   
+   .form-style h2, .form-style h3 {
+    padding: -10px;
+    text-align: center;
+    color: #5b5b5b;
+   }
+   
+   .form-style p {
+    text-align: center;
+    color: #5b5b5b;
+    margin-bottom: 20px;
+   }
+   
+   .form-style label {
+    display: block;
+    margin-bottom: 5px;
+    color: #5b5b5b;
+   }
+   
+   .form-style input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    color: #5b5b5b;
+   }
+   
+   .form-style button {
+    width: 100%;
+    padding: 10px;
+    background-color:#22BAA0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+   }
+   
+   .form-style button:hover {
+    background-color: #34425A;
+   }

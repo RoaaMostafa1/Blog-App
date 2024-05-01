@@ -1,0 +1,110 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+}
+
+
+header {
+    background-color: #22baa0;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+}
+
+header .left-links,
+header .right-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+header .left-links li,
+header .right-links li {
+    margin-right: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #34425a;
+}
+
+.post-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.post {
+    flex: 0 0 calc(49% - 10px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
+
+.post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.post h1 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.post p {
+    color: #666;
+    line-height: 1.6;
+}
+.category-name {
+   color: #34425a;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+/* Add more styles as needed */
+
+@media screen and (max-width: 600px) {
+    /* Add responsive styles if needed */
+    header {
+        font-size: 14px;
+    }
+
+    .left-links, .right-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-links li, .right-links li {
+        margin: 5px 0;
+    }
+}

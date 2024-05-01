@@ -1,0 +1,127 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set body background color and text color */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header styling */
+header {
+    background-color: #22baa0;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+}
+
+header .left-links,
+header .right-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+header .left-links li,
+header .right-links li {
+    margin-right: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #34425a;
+}
+/* Form styling */
+.form-style {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-style label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-style input[type="text"],
+.form-style textarea,
+.form-style select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.form-style input[type="submit"] {
+    background-color: #22baa0;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.form-style input[type="submit"]:hover {
+    background-color: #22baa0;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 600px) {
+    header ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .form-style {
+        width: 80%;
+    }
+}
+/* Style for the Choose File button */
+.form-style input[type="file"] {
+    display: none; /* Hide the default file input */
+}
+
+.file-input-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.file-input-wrapper label {
+    display: block;
+    padding: 10px 15px;
+    background-color: #22baa0;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Style for the file name display */
+.file-input-wrapper .file-name {
+    margin-top: 10px;
+}
+
+/* Style for the Choose File button when hovering */
+.file-input-wrapper label:hover {
+    background-color: #22baa0;
+}
+

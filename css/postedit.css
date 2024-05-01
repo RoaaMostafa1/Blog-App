@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #22baa0;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+}
+
+header .left-links,
+header .right-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+header .left-links li,
+header .right-links li {
+    margin-right: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #34425a;
+}
+.container {
+    width: 80%;
+    margin: 50px auto; /* Increased top and bottom margin */
+    background-color: #fff;
+    padding: 40px; /* Increased padding */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.form-style {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px; /* Added margin at the top */
+    margin-bottom: 20px; /* Added margin at the bottom */
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 15px; /* Increased padding */
+    margin: 15px; /* Increased margin-bottom */
+    box-sizing: border-box;
+    border-radius: 10px;
+
+}
+textarea {
+    width: 100%;
+    height: 400px;
+    padding: 15px; /* Increased padding */
+    margin: 15px; /* Increased margin-bottom */
+    box-sizing: border-box;
+    border-radius: 10px;
+    resize: none;
+}
+
+input[type="submit"] {
+    background-color: #22baa0;
+    color: #fff;
+    padding: 15px 20px; /* Increased padding */
+    border: none;
+    cursor: pointer;
+}

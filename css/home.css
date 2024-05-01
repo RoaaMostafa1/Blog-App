@@ -1,0 +1,173 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 200px;
+    background-color:#34425A ;
+    color: #fff;
+    height: 100%;
+    position: fixed;
+    transition: margin-left 0.5s;
+    margin-left: -200px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+}
+
+.sidebar img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.content {
+    margin-left: 200px;
+   margin-left: 0;
+    transition: margin-left 0.5s;
+    padding: 20px;
+    flex-grow: 1;
+    z-index: 2;
+}
+
+ 
+#toggle-btn {
+    background-color: transparent;
+    color: #34425A;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    z-index: 3;
+    transition: all 0.3s ease;  
+}
+
+#toggle-btn.active {
+    transform: scale(1.5); 
+}
+ /*Header styles */
+header {
+    background-color:#22BAA0;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* Align items horizontally with space between them */
+    align-items: center; /* Align items vertically in the center */
+}
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header .right {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+header .right li {
+    margin-right: 20px;
+}
+
+header a {
+    color: #22BAA0;
+    text-decoration: none;
+}
+
+header .right a {
+    background-color:  #34425A;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+header .right a:hover {
+    background-color: #B0B0B0;
+}
+
+/* Search styles */
+.search {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center items horizontall*/
+    align-items: center; /* Center items vertically */
+}
+
+.inputsearch {
+    padding: 10px;
+    width: 200px;
+}
+
+.searchbutton {
+    padding: 10px;
+    background-color:#22BAA0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Post styles */
+/* Add this CSS to your existing styles */
+.post-container {
+    display: flex; /* Use flexbox to display posts side by side */
+    flex-wrap: wrap; /* Allow posts to wrap to the next line if there's not enough space */
+}
+
+.posts {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    flex-basis: calc(50% - 20px); /* Set the width of each post to 50% with some spacing in between */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin: 10px; /* Add some space between the posts */
+}
+
+/* Add this CSS to your existing styles */
+.posts img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+.read-more {
+    display: inline-block;
+    padding: 10px;
+    background-color: #34425A;
+    color: #fff;
+    text-decoration: none;
+}

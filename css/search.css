@@ -1,0 +1,111 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #22baa0;
+    color: #fff;
+    padding: 8px 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+/*
+a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}*/
+
+.posts {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.posts img {
+    display: block;
+    margin: 0 auto;
+}
+
+.excerpt {
+    margin-top: 10px;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #22baa0;
+    color: white;
+    text-decoration: none;
+  /*  padding: 5px;*/
+}
+
+.search-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+    width: 80%;
+    padding: 10px;
+}
+
+.search-button {
+    width: 18%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    header ul {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    header li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .search-container {
+        width: 90%;
+    }
+
+    .search-input, .search-button {
+        width: 100%;
+    }
+}
